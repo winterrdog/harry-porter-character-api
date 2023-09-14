@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const { Utility } = require("./utility");
-const { cacheRequest, RedisClientSingleton } = require("./cacheMiddleware");
+const { Utility } = require("../utils");
+const { cacheRequest, RedisClientSingleton } = require("../middleware");
 
 // connect to redis
 let redisClient;
