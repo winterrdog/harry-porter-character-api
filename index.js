@@ -7,5 +7,5 @@ const app = express();
 app.use("/hogwarts/characters", charactersRoutes);
 
 app.listen(port, () => {
-    console.log(`Server listening on port ${port}`);
+    console.log(`-- server listening on port ${port}`);
 });
