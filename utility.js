@@ -3,10 +3,10 @@ const axios = require("axios");
 class Utility {
     // fetch data from harry potter character api
     static async fetchCharacters(characterId) {
-        const apiUrl = "http://hp-api.onrender.com/api";
+        let apiUrl = "http://hp-api.onrender.com/api";
 
         if (characterId) {
-            apiUrl = `${apiUrl}/characters/${characterId}`;
+            apiUrl = `${apiUrl}/character/${characterId}`;
         } else {
             apiUrl = `${apiUrl}/characters`;
         }
